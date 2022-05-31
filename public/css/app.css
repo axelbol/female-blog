@@ -722,6 +722,9 @@ select {
 .-mr-2 {
   margin-right: -0.5rem;
 }
+.ml-8 {
+  margin-left: 2rem;
+}
 .block {
   display: block;
 }
@@ -1232,13 +1235,21 @@ select {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
-.text-green {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(26 171 139 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(139 96 237 / var(--tw-text-opacity));
 }
 .text-yellow {
   --tw-text-opacity: 1;
   color: rgb(255 199 60 / var(--tw-text-opacity));
+}
+.text-green {
+  --tw-text-opacity: 1;
+  color: rgb(26 171 139 / var(--tw-text-opacity));
 }
 .text-red {
   --tw-text-opacity: 1;
@@ -1255,14 +1266,6 @@ select {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.text-purple {
-  --tw-text-opacity: 1;
-  color: rgb(139 96 237 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -1362,6 +1365,9 @@ select {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
+[x-cloak] {
+    display: none !important;
+}
 /* Vertical line to the left of the comments */
 .comments-container::before {
     position: absolute;
@@ -1404,6 +1410,15 @@ select {
     left: -58px;
     background: #8b60ed;
     opacity: 1;
+}
+.is-admin {
+    border-width: 1px;
+    border-image-source: linear-gradient(266deg, #21c8f6 98%, #637bff -52%);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(266deg, #21c8f6 98%, #637bff -52%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-color: transparent;
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
